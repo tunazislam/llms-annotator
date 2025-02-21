@@ -2943,16 +2943,16 @@ Show Task
 <div id="mf" style="margin-top: 20px">
       <p class="raw_text" style = "font-size: 20px ; font-style: italic">
         <br>
-      <!--   <classification-target>        
+        <classification-target>        
               <b>Text:</b> ${text}        
-        </classification-target> -->
+        </classification-target>
      
-          <b> Text: </b>Surprise: Fox News Hosts Are Following Strict COVID Protocols While Telling Viewers Masks and Vaccines Are Liberal Plots.
+        <!--   <b> Text: Why so much pressure on making ppl,take this damn vaccine. Unlike some,im all for my belief an religion. To not take it. I will protect my body from a man made project. I am not science project. Nor will i ever be. </b> -->
       <br>
      </p>
      <p class="raw_annot" style = "font-size: 20px ; font-style: italic">
         <!-- <br> -->
-        <!-- <classification-target>        
+        <classification-target>        
               <b>Moral Foundation:</b> ${mf_llms}    
               <br> 
               <b>MF Explanation:</b> ${mf_explanation}   
@@ -2960,15 +2960,21 @@ Show Task
               <b>Actor-Target polarity role:</b> positive actor: ${positive_actors_llms}, negative actor: ${negative_actors_llms}, positive target: ${positive_targets_llms}, negative target: ${negative_targets_llms}
               <br>
               <b>Role Explanation:</b> ${role_explanation}
-        </classification-target> -->
+        </classification-target>
 
-      <b>Moral Foundation: </b>fairness/cheating.
+      <!-- Question1: What's the moral foundation of the above text? Give the explanation of choosing the certain answer.
       <br>
-      <b>MF Explanation: </b> because the text implies that Fox News hosts are being hypocritical by following strict COVID protocols while telling their viewers that masks and vaccines are liberal plots, which is unfair.
+      Answer1: <b>sanctity/degradation</b>.
       <br>
-      <b> Actor-Target polarity role:</b> Negative Actor: Fox News hosts. Negative Target: Viewers.
+      Explanation1: because the text expresses concern about the purity of one's body, with the vaccine being seen as a "man-made project" that could contaminate or degrade one's body.
       <br>
-      <b> Role Explanation:</b> Fox News hosts are the negative actors because they are being hypocritical, and the viewers are the negative targets because they are being misled by the hosts' contradictory actions and statements.
+      <br>
+      Question2: Answer the actor-target role with polarity. Please only choose actor-target role with polarity from the given text. Don’t generate a new actor-target role with polarity. Give the explanation of choosing the certain answer.
+      <br>
+      Answer2: <b> Negative Actor: those pressuring to take the vaccine. Positive Target: I </b>.
+      <br>
+      Explanation2: The text expresses a negative attitude towards the pressure to take the vaccine, seeing it as an imposition on one's autonomy and bodily purity. The actor is the entity exerting this pressure (which is not explicitly stated, but implied). The target is the speaker themselves, who is fighting to protect their body from what they see as a potential contaminant. -->
+     
       <br>
      </p>
       <h5 style="font-family: Helvetica; background-color: #f0f0f0;">
